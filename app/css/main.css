@@ -22,42 +22,91 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
-/*==========  Desktop First Method  ==========*/
+.franchise {
+  background-color: #096ec1;
+  margin-top: 188px;
+  text-align: center; }
+  .franchise h2 {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Roboto Bold', arial;
+    text-transform: uppercase;
+    line-height: 41px;
+    padding-top: 96px; }
+  .franchise img {
+    margin-top: 46px;
+    margin-bottom: 73px; }
+
+.no-risk {
+  text-align: center;
+  background-image: url("../img/bg-risk.png");
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.title-risk h2 {
+  font-size: 36px;
+  font-family: 'Roboto Bold', arial;
+  text-transform: uppercase;
+  padding-top: 67px; }
+
+.risk-item {
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 87px; }
+  .risk-item:last-child {
+    padding-bottom: 113px;
+    margin-bottom: 0; }
+  .risk-item p {
+    font-family: 'Roboto Light', arial;
+    font-size: 16px;
+    color: #828282;
+    padding: 37px 0 0 80px;
+    letter-spacing: -1.1px; }
+
+.risk-item-r {
+  text-align: right; }
+  .risk-item-r p {
+    padding: 37px 52px 0 0;
+    letter-spacing: -1px; }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .wrapper {
-    width: auto; } }
+    width: auto; }
+  .pad {
+    padding: 50px 5px !important; }
+  footer {
+    text-align: center; }
+    footer .wrapper {
+      width: auto; }
+    footer ul {
+      float: none;
+      display: inline-block;
+      text-align: center; }
+      footer ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+        float: none; }
+    footer .gs {
+      float: none;
+      display: block; } }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .pad {
-    padding: 20px 5px !important; }
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
+    padding: 20px 5px !important; } }
 
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
 /* ============================ form css =========================== */
-#modal_callback_ok h3 {
+#modal_callback_ok h3, #modal_callback_ok h4 {
   font: 30px RobotoRegular,Arial,sans-serif;
   text-align: center; }
+
+#modal_callback_ok h4 {
+  font-weight: 700; }
 
 .allert, .allert_tell {
   position: absolute;

@@ -1,21 +1,162 @@
 body {
   font-size: 16px;
-  min-width: 275px;
+  min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: BebasNeueRegular;
   overflow-x: hidden;
+  color: #222222;
   background-color: #fff; }
 
-body a {
+a, button, input, textarea {
   text-decoration: none;
+  outline: 0;
+  border: 0;
   -webkit-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
   transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease; }
+  a:focus, button:focus, input:focus, textarea:focus {
+    outline: 0;
+    border: 0; }
+
+button:hover {
+  cursor: pointer; }
+
+.clearfix {
+  clear: both; }
 
 .hidden {
   display: none; }
 
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
-  overflow: hidden; }
+.inner {
+  max-width: 981px;
+  margin: 0 auto; }
+
+header {
+  position: relative; }
+
+.logo {
+  text-align: center;
+  padding-top: 19px; }
+
+.head-title {
+  text-align: center; }
+  .head-title h1 {
+    font-family: BebasNeueBold;
+    font-size: 58px;
+    text-transform: uppercase;
+    color: #108aee;
+    letter-spacing: 0.5px;
+    margin-top: 36px;
+    line-height: 64px; }
+  .head-title p {
+    font-family: 'Roboto Bold', arial;
+    font-size: 24px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-top: 14px;
+    letter-spacing: 0.5px;
+    line-height: 35px; }
+
+.forma-head {
+  position: relative;
+  margin-top: 61px; }
+  .forma-head p {
+    margin-top: 104px;
+    letter-spacing: -.1px;
+    font-family: 'Roboto Bold', arial;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 26px;
+    position: relative; }
+    .forma-head p:after {
+      position: absolute;
+      content: '';
+      right: -126px;
+      top: -60px;
+      z-index: 55;
+      background-image: url("../img/line.png");
+      width: 90px;
+      height: 76px; }
+
+.video {
+  max-width: 540px;
+  width: 100%;
+  height: 416px;
+  margin-left: 11px;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left; }
+  .video video {
+    max-width: 488px;
+    width: 100%;
+    margin: 28px 28px;
+    height: 292px;
+    background-color: #000; }
+
+.forma {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 22px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+  background-color: #0b74ca;
+  position: relative;
+  text-align: center; }
+  .forma h2 {
+    color: #fff;
+    font-family: 'Roboto Bold', arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 36px;
+    padding-bottom: 20px; }
+  .forma form {
+    border: 1px solid #71a9d7;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    min-height: 392px;
+    max-width: 280px;
+    width: 100%;
+    margin: 10px; }
+
+.all-forms input {
+  max-width: 220px;
+  border: 1px solid #878484;
+  border-top: 3px solid #878484;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  font-family: 'Roboto Light Italic', arial;
+  font-size: 14px;
+  background-color: #ebebeb;
+  padding: 16px 31px;
+  margin: 9px 34px; }
+  .all-forms input::-webkit-input-placeholder {
+    font-family: 'Roboto Light Italic', arial;
+    font-size: 14px; }
+  .all-forms input::-moz-placeholder {
+    font-family: 'Roboto Light Italic', arial;
+    font-size: 14px; }
+  .all-forms input:-moz-placeholder {
+    font-family: 'Roboto Light Italic', arial;
+    font-size: 14px; }
+  .all-forms input:-ms-input-placeholder {
+    font-family: 'Roboto Light Italic', arial;
+    font-size: 14px; }
+
+.all-forms button {
+  background-color: #da251d;
+  font-family: 'Roboto Light', arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 19px 70px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px 32px; }
+
+.pixpef {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+  opacity: .4; }
